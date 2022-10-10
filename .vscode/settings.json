@@ -1,0 +1,87 @@
+{
+	"latex-workshop.latex.recipes": [
+		{
+			"name": "xelatex",
+			"tools": [
+				"xelatex"
+			]
+		},
+		{
+			"name": "xelatex*2",
+			"tools": [
+				"xelatex",
+				"xelatex"
+			]
+		},
+		{
+			"name": "latexmk",
+			"tools": [
+				"latexmk"
+			]
+		},
+		{
+			"name": "xe, bib, xe*2",
+			"tools": [
+				"xelatex",
+				"bibtex",
+				"xelatex",
+				"xelatex"
+			]
+		}
+	],
+	"latex-workshop.latex.tools": [
+		{
+			"name": "latexmk",
+			"command": "latexmk",
+			"args": [
+				"-pdf",
+				"%DOC%"
+			]
+		},
+		{
+			"name": "xelatex",
+			"command": "xelatex",
+			"args": [
+				"%DOC%"
+			]
+		},
+		{
+			"name": "pdflatex",
+			"command": "pdflatex",
+			"args": [
+				"%DOC%"
+			]
+		},
+		{
+			"name": "bibtex",
+			"command": "bibtex",
+			"args": [
+				"%DOC%"
+			]
+		}
+	],
+	"latex-workshop.view.pdf.viewer": "tab",
+	"latex-workshop.latex.autoClean.run": "onBuilt",
+	"latex-workshop.latex.clean.fileTypes": [
+		"*.aux",
+		"*.bbl",
+		"*.blg",
+		"*.idx",
+		"*.ind",
+		"*.lof",
+		"*.lot",
+		"*.out",
+		"*.toc",
+		"*.acn",
+		"*.acr",
+		"*.alg",
+		"*.glg",
+		"*.glo",
+		"*.gls",
+		"*.ist",
+		"*.fls",
+		"*.log",
+		"*.fdb_latexmk",
+		"*.synctex.gz"
+	],
+}
