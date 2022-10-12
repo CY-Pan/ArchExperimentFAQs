@@ -24,8 +24,8 @@ A：要求的有mstatus、mcause、mepc，即在exp\_test.s中有读出来的这
 \textbf{Q2：关于mtvec}
 
 A：mtvec是异常/中断时处理程序的地址，启用向量模式下会对不同的异常/中断有不同的跳转地址，实验中不开启，共用一个处理程序地址。
-该地址是由指令设定（即写在exp\_test.s$\to$转换成rom.hex$\to$读到ROM\_D）。\textbf{不可以在Verilog中设定}（Verilog是硬件设计语言，
-写在Verilog中等于是在把这一地址固定到了芯片中）。\\
+该地址是由指令设定（即写在exp\_test.s$\to$转换成rom.hex$\to$读到ROM\_D）。\textbf{不可以在Verilog中设定与软件程序相关的值！}
+（Verilog是硬件设计语言，对应芯片的集成电路，造出来就不能改的）\\
 
 
 \textbf{Q3：关于mstatus}
