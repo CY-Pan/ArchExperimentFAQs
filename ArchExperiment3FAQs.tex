@@ -15,6 +15,10 @@
 
 \maketitle
 
-placeholder
+\textbf{Q1：valid、hit、dirty、tag应该如何赋值？}
+
+A：在后续实验的使用中，外部首先使用hit的值来判断是否命中，如不命中就意味着要从下一级memory中载入数据，此时用valid\&dirty来判断是否需要写回，
+写回则用tag组成写回地址。因此valid、dirty、tag均对应待替换的路。
+
 
 \end{document}
